@@ -6,25 +6,14 @@ function QuestionList() {
   const [questions, setQuestions] = useState([]);
   const [hoveredId, setHoveredId] = useState(null);
 
+  // useEffect to fetch data from Firestore and update questions state on component mount
   useEffect(() => {
-    const q = query(collection(db, 'questions'), orderBy('createdAt', 'desc'));
-    const unsubscribe = onSnapshot(q, (querySnapshot) => {
-      const questionsArray = querySnapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data()
-      }));
-      setQuestions(questionsArray);
-    });
-
-    return () => unsubscribe();
+    
   }, []);
 
+  // Function to delete a question from Firestore
   const handleDelete = async (id) => {
-    try {
-      await deleteDoc(doc(db, 'questions', id));
-    } catch (error) {
-      console.error("Error deleting document: ", error);
-    }
+    
   };
 
   return (
@@ -32,8 +21,9 @@ function QuestionList() {
       {questions.map((question) => (
         <li 
           key={question.id} 
-          onMouseEnter={() => setHoveredId(question.id)}
-          onMouseLeave={() => setHoveredId(null)}
+          // Logic for showing delete button on hover
+          onMouseEnter={ }
+          onMouseLeave={ }
           style={{ 
             position: 'relative', 
             padding: '10px', 
@@ -42,10 +32,14 @@ function QuestionList() {
             borderRadius: '5px'
           }}
         >
-          {question.text}
+          {/* Render the question text here */}
+          {}
+
+          {/* Handle hovering mouse over a question to show delete button */}
           {hoveredId === question.id && (
             <button
-              onClick={() => handleDelete(question.id)}
+            // Logic for deleting a question on button click
+              onClick={}
               style={{
                 position: 'absolute',
                 right: '5px',
