@@ -3,7 +3,7 @@ import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 
 function QuestionForm() {
-  // State for our input values
+  // State for user question input
 
   const handleSubmit = async (e) => {
     e.preventDefault();
