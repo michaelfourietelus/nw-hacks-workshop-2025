@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# NWHacks Workshop 2025 - Anonymous Q&A Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
+This project was created for the NWHacks Workshop 2025. It's a simple, real-time Anonymous Q&A platform built with React and Firebase, demonstrating how to create a full-stack web application in a short amount of time.
 
-## Available Scripts
+## Features
+- Real-time question posting and retrieval
+- Anonymous submissions
+- Ability to delete questions
+- Simple and intuitive user interface
 
-In the project directory, you can run:
+## Technologies Used
+- React.js
+- Firebase (Firestore for database)
+- Firebase Hosting
 
-### `npm start`
+## Setup
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Set up a Firebase project and add your configuration to `src/firebase.js`
+4. Run the app locally: `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deployment
+This app is deployed using Firebase Hosting. To deploy your own version:
+1. Install Firebase CLI: `npm install -g firebase-tools`
+2. Login to Firebase: `firebase login`
+3. Initialize Firebase in the project: `firebase init hosting`
+4. Build the React app: `npm run build`
+5. Deploy to Firebase: `firebase deploy`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Workshop Information
+This project is part of the NWHacks Workshop 2025, demonstrating rapid full-stack development using modern web technologies. It serves as a starting point for participants to understand React, Firebase integration, and real-time database operations.
 
-### `npm test`
+## License
+[MIT License](LICENSE)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Created with ❤️ for NWHacks 2025
